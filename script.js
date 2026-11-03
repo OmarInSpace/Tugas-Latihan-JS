@@ -3,9 +3,9 @@
 //                     KUMPULAN SOAL CERITA & STUDI KASUS
 //                         MATERI PERTEMUAN 1 - 7
 // ==============================================================================
-// Nama Siswa  : 
+// Nama Siswa  :
 // Kelas       : 10A
-// Tanggal     : 
+// Tanggal     :
 //
 // PETUNJUK:
 // 1. Baca dengan seksama setiap narasi studi kasus dan instruksi yang diberikan.
@@ -13,7 +13,6 @@
 // 3. Gunakan console.log() (atau alert/document.write jika diminta) untuk menampilkan hasil.
 // 4. Buka file index.html di browser dan periksa tab Console (F12) untuk melihat output.
 // ==============================================================================
-
 
 // ==============================================================================
 // BAGIAN 1: PERTEMUAN 1 (Variabel var, let, const, Output console.log, dan typeof)
@@ -31,12 +30,12 @@ const nis = "20261001";
 let namaSantri = "Azzam";
 let umur = 16;
 
-console.log(`Santri bernama ${namaSantri} memiliki NIS ${nis} dan berumur ${umur} tahun.`);
-console.log(typeof(nis));
-console.log(typeof(umur));
+console.log(
+  `Santri bernama ${namaSantri} memiliki NIS ${nis} dan berumur ${umur} tahun.`,
+);
+console.log(typeof nis);
+console.log(typeof umur);
 console.log("--------------------------");
-
-
 
 // Soal 1.2 (Studi Kasus: Pembaruan Data Buku Perpustakaan):
 // Di perpustakaan sekolah, awalnya jumlah buku matematika (`jumlahBuku`) dicatat sebanyak 25 eksemplar menggunakan 'let'.
@@ -45,7 +44,7 @@ console.log("--------------------------");
 
 let jumlahBuku = 25;
 jumlahBuku = 40;
-console.log(`Jumlah buku sekarang: ${jumlahBuku}!`)
+console.log(`Jumlah buku sekarang: ${jumlahBuku}!`);
 console.log("--------------------------");
 
 // Soal 1.3 (Studi Kasus: Eksperimen Aturan Variabel):
@@ -57,9 +56,8 @@ var namaKota = "Jakarta";
 var namaKota = "Bandung";
 const kodeNegara = "IDN";
 // karena const bersifat tidak boleh berubah (immutable). Jika mencoba mengubah nilai kodeNegara, hasilnya error.
-console.log(namaKota + kodeNegara)
+console.log(namaKota + kodeNegara);
 console.log("--------------------------");
-
 
 // ==============================================================================
 // BAGIAN 2: PERTEMUAN 2 (Tipe Data Primitif, Array, Object, null, undefined, & Input)
@@ -74,7 +72,9 @@ let namaLengkap = "Hilmi";
 let alamat = "Jl. Merdeka No. 10";
 let citaCita = "Programmer";
 
-console.log(`Halo, nama saya ${namaLengkap}, beralamat di ${alamat}, dan bercita-cita menjadi ${citaCita}.`)
+console.log(
+  `Halo, nama saya ${namaLengkap}, beralamat di ${alamat}, dan bercita-cita menjadi ${citaCita}.`,
+);
 console.log("--------------------------");
 
 // Soal 2.2 (Studi Kasus: Data Khusus Kosong - Null vs Undefined):
@@ -84,10 +84,9 @@ console.log("--------------------------");
 
 let beaswiswa = null;
 let catatanPelanggaran = undefined;
-console.log(typeof(beaswiswa));
-console.log(typeof(catatanPelanggaran));
+console.log(typeof beaswiswa);
+console.log(typeof catatanPelanggaran);
 console.log("--------------------------");
-
 
 // Soal 2.3 (Studi Kasus: Menu Makanan Kantin - Array & Method):
 // Buat sebuah array `menuKantin` yang berisi 3 makanan: ['Ayam Geprek', 'Nasi Goreng', 'Mie Ayam'].
@@ -97,13 +96,12 @@ console.log("--------------------------");
 // 3. Hapus menu pertama ('Ayam Geprek') menggunakan method .shift() karena sudah habis terjual.
 // 4. Cetak array `menuKantin` terbaru ke console dan tampilkan makanan favorit pada indeks ke-0!
 
-const menuKantin = ['Ayam Geprek', 'Nasi Goreng', 'Mie Ayam'];
-menuKantin.push('Soto Ayam');
-menuKantin.push('Bakso');
-menuKantin.shift('Ayam Geprek');
+const menuKantin = ["Ayam Geprek", "Nasi Goreng", "Mie Ayam"];
+menuKantin.push("Soto Ayam");
+menuKantin.push("Bakso");
+menuKantin.shift("Ayam Geprek");
 console.log(menuKantin[0]);
 console.log("--------------------------");
-
 
 // Soal 2.4 (Studi Kasus: Profil Komprehensif Siswa - Object):
 // Buat sebuah object bernama `profilSantri` yang memiliki properti:
@@ -115,17 +113,16 @@ console.log("--------------------------");
 // Tampilkan ke console: nama siswa dan hobi keduanya (indeks ke-1)!
 
 const profilSantri = {
-    nama: "Fahmi",
-    umur: 16,
-    kelas: "10A",
-    hobi: ['Membaca', 'Coding', 'Futsal']
-}
+  nama: "Fahmi",
+  umur: 16,
+  kelas: "10A",
+  hobi: ["Membaca", "Coding", "Futsal"],
+};
 
-profilSantri.asrama = "Gedung Al-Fatih"
+profilSantri.asrama = "Gedung Al-Fatih";
 
-console.log(profilSantri.nama + profilSantri.hobi[1])
+console.log(profilSantri.nama + profilSantri.hobi[1]);
 console.log("--------------------------");
-
 
 // Soal 2.5 (Studi Kasus: Simulasi Input Usia Pengunjung):
 // Tuliskan kode (boleh dalam bentuk komentar aktif atau langsung):
@@ -136,9 +133,6 @@ console.log("--------------------------");
 // let umurPengunjung = prompt("Masukkan Tahun Lahir!")
 // parseInt(umurPengunjung);
 // alert(2026 - umurPengunjung);
-
-
-
 
 // ==============================================================================
 // BAGIAN 3: PERTEMUAN 3 (Konversi Tipe Data, Truthy/Falsy, Aritmatika, Penugasan, & Perbandingan)
@@ -156,7 +150,6 @@ let numberHarga = Number(stringHarga);
 console.log("TRX-" + kodeToString);
 console.log(numberHarga + 5000);
 console.log("--------------------------");
-
 
 // Soal 3.2 (Studi Kasus: Validasi Nilai Truthy dan Falsy):
 // Buat pengecekan boolean dengan Boolean() untuk 5 nilai berikut di console:
@@ -213,14 +206,12 @@ console.log("--------------------------");
 // 3. Bandingkan `skorA !== skorB` dan cetak hasilnya ke console!
 
 let skorA = 10;
-let skorB = '10';
+let skorB = "10";
 
 console.log(skorA == skorB); // true, karena == adalah "SAMA DENGAN" jadi hanya melihat nilainya, bukan tipe datanya.
 console.log(skorA === skorB); // false, karena === adalah "SAMA DENGAN" dan "SAMA TIPE DATA", jadi karena tipe datanya beda jadi hasilnya false.
 console.log(skorA !== skorB);
 console.log("--------------------------");
-
-
 
 // ==============================================================================
 // BAGIAN 4: PERTEMUAN 4 (Operator Logika &&, ||, !)
@@ -238,7 +229,6 @@ let dapatSim = usia >= 17 && lulusPraktek;
 console.log(`Apakah Rian berhak mendapatkan SIM? ${dapatSim}`);
 console.log("--------------------------");
 
-
 // Soal 4.2 (Studi Kasus: Autentikasi Login Akun Ujian - Operator &&):
 // Seorang siswa hanya dapat login ke ruang ujian jika username bernilai "siswa10A" DAN token bernilai "PAS2026".
 // Jika seorang siswa menginput username = "siswa10A" dan token = "PAS2025", tentukan apakah status login berhasil menggunakan operator &&!
@@ -249,7 +239,6 @@ let loginBerhasil = username && token;
 
 console.log(`Status login berhasil: ${loginBerhasil}`);
 console.log("--------------------------");
-
 
 // Soal 4.3 (Studi Kasus: Tiket Masuk Edupark - Operator ||):
 // Wahana wisata edukasi memberikan tiket masuk gratis jika pengunjung berusia balita (kurang dari 5 tahun) ATAU berstatus penyandang disabilitas (isDisabilitas = true).
@@ -278,7 +267,7 @@ console.log("--------------------------");
 let nilaiMinimalUjian = 92;
 let juaraTahfidz = false;
 let kenaSanksi = true;
-let menerimaBeasiswa = nilaiMinimalUjian >= 90 || juaraTahfidz && !kenaSanksi;
+let menerimaBeasiswa = nilaiMinimalUjian >= 90 || (juaraTahfidz && !kenaSanksi);
 console.log(menerimaBeasiswa);
 console.log("--------------------------");
 
@@ -292,9 +281,9 @@ console.log("--------------------------");
 // Setelah itu, karena ada 1 orang yang membatalkan nomor antrean, lakukan decrement (`--`), lalu tampilkan nilainya!
 
 let nomorAntrean = 15;
-nomorAntrean++
+nomorAntrean++;
 console.log(nomorAntrean);
-nomorAntrean--
+nomorAntrean--;
 console.log(nomorAntrean);
 console.log("--------------------------");
 
@@ -305,9 +294,9 @@ console.log("--------------------------");
 
 let nilaiUjian = 73;
 if (nilaiUjian >= 75) {
-    console.log("Tuntas: Silakan mengikuti remedial pekan depan!"); 
+  console.log("Tuntas: Silakan mengikuti remedial pekan depan!");
 } else {
-    console.log("Belum Tuntas: Silakan mengikuti remedial pekan depan!");
+  console.log("Belum Tuntas: Silakan mengikuti remedial pekan depan!");
 }
 console.log("--------------------------");
 
@@ -322,13 +311,13 @@ console.log("--------------------------");
 
 let skorAkhir = 83;
 if (skorAkhir >= 90) {
-    console.log("A (Sangat Baik)");
-}else if (skorAkhir >= 80) {
-    console.log("B (Baik)");
-}else if (skorAkhir >= 70) {
-    console.log("C (Cukup)");
-}else {
-    console.log("D (Perlu Bimbingan)");
+  console.log("A (Sangat Baik)");
+} else if (skorAkhir >= 80) {
+  console.log("B (Baik)");
+} else if (skorAkhir >= 70) {
+  console.log("C (Cukup)");
+} else {
+  console.log("D (Perlu Bimbingan)");
 }
 console.log(skorAkhir);
 console.log("--------------------------");
@@ -342,11 +331,11 @@ console.log("--------------------------");
 
 let bilangan = 0;
 if (bilangan === 0) {
-    console.log("Bilangan Nol");
-}else if (bilangan % 2 === 0) {
-    console.log("Bilangan Genap");
-}else {
-    console.log("Bilangan Ganjil");
+  console.log("Bilangan Nol");
+} else if (bilangan % 2 === 0) {
+  console.log("Bilangan Genap");
+} else {
+  console.log("Bilangan Ganjil");
 }
 console.log("--------------------------");
 
@@ -360,24 +349,23 @@ console.log("--------------------------");
 
 let nomorHari = 3;
 switch (nomorHari) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        console.log("Hari Sekolah dan Kegiatan Belajar");
-        break;
-    case 6:
-        console.log("Hari Olahraga dan Kerja Bakti Lingkungan");
-        break;
-    case 7:
-        console.log("Hari Kunjungan Orang Tua dan Istirahat");
-        break;
-    default:
-        console.log("Nomor hari tidak valid (masukkan angka 1 - 7)");
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+    console.log("Hari Sekolah dan Kegiatan Belajar");
+    break;
+  case 6:
+    console.log("Hari Olahraga dan Kerja Bakti Lingkungan");
+    break;
+  case 7:
+    console.log("Hari Kunjungan Orang Tua dan Istirahat");
+    break;
+  default:
+    console.log("Nomor hari tidak valid (masukkan angka 1 - 7)");
 }
-
-
+console.log("--------------------------");
 
 // Soal 5.6 (Studi Kasus: Pengelompokan Kategori Makanan Sehat - switch case grouping):
 // Diberikan variabel `pilihanMakanan` = "salad".
@@ -386,10 +374,20 @@ switch (nomorHari) {
 // - Jika "burger" atau "gorengan" -> Tampilkan: "Pilihan Kurang Sehat: Batasi konsumsi minyak dan lemak!"
 // - default -> Tampilkan: "Menu makanan tidak terdaftar di database kantin sehat."
 
-
-
-
-
+let pilihanMakanan = "salad";
+switch (pilihanMakanan) {
+  case "salad":
+  case "jus buah":
+    console.log("Pilihan Sangat Sehat: Kaya Nutrisi dan Vitamin!");
+    break;
+  case "burger":
+  case "gorengan":
+    console.log("Pilihan Kurang Sehat: Batasi konsumsi minyak dan lemak!");
+    break;
+  default:
+    console.log("Menu makanan tidak terdaftar di database kantin sehat.");
+}
+console.log("--------------------------");
 
 // ==============================================================================
 // BAGIAN 6: PERTEMUAN 6 (Perulangan for, while, do-while, & Percabangan di dalam Loop)
@@ -399,10 +397,27 @@ switch (nomorHari) {
 // Gunakan for loop untuk menampilkan hitungan mundur dari angka 10 sampai 1 ke console.
 // Tepat setelah perulangan selesai, tampilkan pesan: "Roket Sains Berhasil Meluncur ke Angkasa!"!
 
+let hitungMundur = 10;
+const pesanRoket = "Roket Sains Berhasil Meluncur ke Angkasa!";
+
+for (hitungMundur = 10; hitungMundur > 0; hitungMundur--) {
+  console.log(hitungMundur);
+}
+console.log(pesanRoket);
+console.log("--------------------------");
+
 // Soal 6.2 (Studi Kasus: Pemanggilan Barisan Siswa Bernomor Ganjil - for loop & modulus):
 // Guru memanggil siswa dengan nomor urut 1 sampai 15. Namun, guru hanya ingin memanggil siswa yang memiliki nomor urut GANJIL.
 // Gunakan for loop dan seleksi kondisi modulus (i % 2 !== 0) untuk menampilkan:
 // "Memanggil siswa nomor urut: [i]" ke console!
+
+let jumlahSiswa = 15;
+for (let nomorUrut = 1; nomorUrut <= jumlahSiswa; nomorUrut++) {
+  if (nomorUrut % 2 !== 0) {
+    console.log(`Memanggil siswa nomor urut: ${nomorUrut}`);
+  }
+}
+console.log("--------------------------");
 
 // Soal 6.3 (Studi Kasus: Inspeksi Armada Mobil Sekolah - for loop dengan kondisi bertingkat):
 // Sekolah memiliki 10 mobil dinas (nomor 1 sampai 10).
@@ -411,12 +426,32 @@ switch (nomorHari) {
 // - Jika mobil nomor 8: Tampilkan "Mobil 8 sedang dipinjam untuk keperluan dinas luar"
 // - Selain itu: Tampilkan "Mobil [nomor] siap beroperasi mengantar santri"!
 
+let mobilDinas = 10;
+for (let nomorMobil = 1; nomorMobil <= mobilDinas; nomorMobil++) {
+  if (nomorMobil === 4) {
+    console.log("Mobil 4 sedang berada di bengkel untuk servis rutin");
+  } else if (nomorMobil === 8) {
+    console.log("Mobil 8 sedang dipinjam untuk keperluan dinas luar");
+  } else {
+    console.log(`Mobil ${nomorMobil} siap beroperasi mengantar santri`);
+  }
+}
+console.log("--------------------------");
+
 // Soal 6.4 (Studi Kasus: Pengisian Galon Air Asrama - while loop):
 // Volume awal air galon adalah 0 liter (variabel `volumeAir = 0`).
 // Kapasitas maksimum galon adalah 5 liter.
 // Gunakan `while` loop untuk mengisi galon liter demi liter (tambah 1 setiap putaran) selama `volumeAir < 5`.
 // Cetak setiap penambahan liter ke console: "Mengisi air... saat ini volume: [volumeAir] Liter".
 // Di luar loop, cetak: "Galon sudah terisi penuh!"!
+
+let volumerAir = 0;
+while (volumerAir < 5) {
+  volumerAir++;
+  console.log(`Mengisi air... saat ini volume: ${volumerAir} Liter`);
+}
+console.log("Galon sudah terisi penuh!");
+console.log("--------------------------");
 
 // Soal 6.5 (Studi Kasus: Pemanasan Mesin Generator Listrik - do...while loop):
 // Generator cadangan asrama harus melakukan pemanasan mesin minimal 1 kali putaran uji coba meskipun indikator `daya` awalnya bernilai 10.
@@ -425,6 +460,12 @@ switch (nomorHari) {
 // dengan kondisi while `daya < 10` (kondisi langsung bernilai false).
 // Buktikan bahwa blok di dalam do tetap dijalankan minimal 1 kali!
 
+let daya = 10;
+do {
+  console.log(`Mesin generator berhasil diuji pada putaran daya ke-${daya}`);
+  daya++;
+} while (daya < 10);
+console.log("--------------------------");
 
 // ==============================================================================
 // BAGIAN 7: PERTEMUAN 7 (Function: Deklarasi, Parameter, Default Parameter, & Geometri)
@@ -436,6 +477,14 @@ switch (nomorHari) {
 // "Teng! Teng! Teng! Waktu belajar di kelas 10A telah dimulai. Harap tertib!"
 // Panggil function tersebut 1 kali untuk mengujinya!
 
+function bunyikanBelSekolah() {
+  console.log(
+    "Teng! Teng! Teng! Waktu belajar di kelas 10A telah dimulai. Harap tertib!",
+  );
+}
+bunyikanBelSekolah();
+console.log("--------------------------");
+
 // Soal 7.2 (Studi Kasus: Mesin Kasir Mini - Function Parameter Aritmatika):
 // Buat 4 buah function yang masing-masing menerima dua parameter (a, b):
 // 1. `tambah(a, b)` -> mencetak hasil penjumlahan a + b
@@ -443,6 +492,25 @@ switch (nomorHari) {
 // 3. `kali(a, b)`   -> mencetak hasil perkalian a * b
 // 4. `bagi(a, b)`   -> mencetak hasil pembagian a / b
 // Ujilah masing-masing function tersebut dengan angka contoh bebas (misal a = 20, b = 5)!
+
+function tambah(a, b) {
+  console.log(a + b);
+}
+function kurang(a, b) {
+  console.log(a - b);
+}
+function kali(a, b) {
+  console.log(a * b);
+}
+function bagi(a, b) {
+  console.log(a / b);
+}
+
+tambah(20, 5);
+kurang(77, 5);
+kali(30, 3);
+bagi(20, 2);
+console.log("--------------------------");
 
 // Soal 7.3 (Studi Kasus: Putaran Lari Pagi - Function dengan Default Parameter):
 // Buat sebuah function bernama `lariKelilingLapangan(jumlahPutaran = 3)`.
@@ -452,12 +520,34 @@ switch (nomorHari) {
 // 1. Panggil `lariKelilingLapangan()` tanpa mengirimkan argumen (akan menjalankan default 3 putaran).
 // 2. Panggil `lariKelilingLapangan(5)` dengan mengirimkan argumen 5 putaran!
 
+function lariKelilingLapangan(jumlahPutaran = 3) {
+  for (let putaran = 1; putaran <= jumlahPutaran; putaran++) {
+    console.log(`Lari putaran ke-${putaran} selesai!`);
+  }
+}
+
+lariKelilingLapangan();
+console.log("--------------------------");
+lariKelilingLapangan(5);
+console.log("--------------------------");
+
 // Soal 7.4 (Studi Kasus: Konsultan Desain Lapangan - Function Rumus Bangun Datar):
 // Buat dua buah function perhitungan bangun datar:
 // 1. `hitungLuasPersegiPanjang(panjang, lebar)`: Menghitung luas (panjang * lebar), lalu cetak hasilnya ke console!
 // 2. `hitungLuasSegitiga(alas, tinggi)`: Menghitung luas segitiga ((alas * tinggi) / 2), lalu cetak hasilnya ke console!
 // Uji function persegi panjang dengan panjang = 10 dan lebar = 6.
 // Uji function segitiga dengan alas = 12 dan tinggi = 8!
+
+function hitungLuasPersegiPanjang(panjang, lebar) {
+  console.log(panjang * lebar);
+}
+hitungLuasPersegiPanjang(10, 6);
+
+function hitungLuasSegitiga(alas, tinggi) {
+  console.log((alas * tinggi) / 2);
+}
+hitungLuasSegitiga(12, 8);
+console.log("--------------------------");
 
 // Soal 7.5 (Studi Kasus Terpadu: Program Kasir Diskon Koperasi Sekolah):
 // Buat sebuah function terpadu bernama `hitungTotalKoperasi(namaPelanggan, totalBelanja, isMember)`.
@@ -471,9 +561,22 @@ switch (nomorHari) {
 // 1. hitungTotalKoperasi("Azzam", 120000, true)
 // 2. hitungTotalKoperasi("Baim", 80000, false)
 
+function hitungTotalKoperasi(namaPelanggan, totalBelanja, isMember) {
+    if (isMember === true && totalBelanja >= 100000) {
+        totalBelanja = totalBelanja * 0.85;
+    } else if (isMember === true && totalBelanja < 100000) {
+        totalBelanja = totalBelanja * 0.95;
+    }
+    console.log(`Pelanggan: ${namaPelanggan} | Member: ${isMember} | Total Akhir: Rp ${totalBelanja}`);
+}
+
+hitungTotalKoperasi("Azzam", 120000, true);
+hitungTotalKoperasi("Baim", 80000, false);
+
+
+
 
 // ==============================================================================
 //                           AKHIR DARI SUBMISSION
 //             Selamat Mengerjakan & Terus Semangat Belajar Javascript!
 // ==============================================================================
-
