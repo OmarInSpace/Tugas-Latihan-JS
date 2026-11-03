@@ -3,9 +3,9 @@
 //                     KUMPULAN SOAL CERITA & STUDI KASUS
 //                         MATERI PERTEMUAN 1 - 7
 // ==============================================================================
-// Nama Siswa  :
+// Nama Siswa  : Ibrahim Omar
 // Kelas       : 10A
-// Tanggal     :
+// Tanggal     : 3 November 2026 (Tanggal Selesai)
 //
 // PETUNJUK:
 // 1. Baca dengan seksama setiap narasi studi kasus dan instruksi yang diberikan.
